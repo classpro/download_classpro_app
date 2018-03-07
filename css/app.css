@@ -18,7 +18,7 @@ body * {
 }
 
 .logo {
-  margin-top: 7rem;
+  margin-top: 10vw;
 }
 
 .logo img {
@@ -31,9 +31,20 @@ body * {
     color: white;
 }
 
+.cover-content .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.cover-content .description {
+    font-size: 1.25rem;
+    color: white;
+}
+
 .app-download-links {
     margin-top: 5rem;
-    margin-bottom: 49.3vh;
+    margin-bottom: 10rem;
 }
 
 .play-store {
@@ -47,10 +58,11 @@ body * {
 
 footer {
     margin: 0;
+    position: fixed;
     bottom: 0;
     background: rgba(0,0,0,0.1);
     color: white;
-    padding: 0.5rem;
+    padding: 0.5rem 0 .5rem 0;
     width: 100%;
 }
 
