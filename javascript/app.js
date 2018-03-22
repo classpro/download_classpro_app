@@ -8,24 +8,18 @@
             if(navigator.userAgent.match(/android/i)) {
                 $appStore.style.display = 'none';
                 $playStore.style.marginRight = 'auto';
-                setTimeout(redirectInAndroid, 1000);
+                redirectInAndroid();
             } else {
                 $playStore.style.display = 'none';
-                setTimeout(redirectInIos, 1000)
+                redirectInIos()
             }
         }
     });
     var redirectInAndroid = function() {
-        isRedirect = confirm('Open App on "Play Store"');
-        if(isRedirect) {
-            window.location.href = "https://play.google.com/store/apps/details?id=com.classprostudentapp&hl=en";
-        }
+        window.location.href = "https://play.google.com/store/apps/details?id=com.classprostudentapp&hl=en";
     };
 
     var redirectInIos = function() {
-        isRedirect = confirm('Open App on "Play Store"');
-        if(isRedirect) {
-            window.location.href = "https://play.google.com/store/apps/details?id=com.classprostudentapp&hl=en";
-        }
+        window.location.href = "https://play.google.com/store/apps/details?id=com.classprostudentapp&hl=en";
     }
 })();
